@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Loader from "./Loader"
 import Categories from "./components/Categories"
 import GoodTea from "./components/GoodTea"
+import Featured from "./components/Featured"
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <Header />
             <Categories />
             <GoodTea/>
+            <Featured/>
         </>
     )
 }

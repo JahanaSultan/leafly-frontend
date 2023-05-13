@@ -5,14 +5,19 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
+    color: #10401b;
 
 }
-
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 body {
     background: #fff;
 }
 
-.color{
+.color {
     background-color: #fff;
 }
 
@@ -39,6 +44,12 @@ button.btn:hover {
     background: transparent;
     border: 2px solid #eeaf00;
     color: #eeaf00;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1.section-header {
@@ -221,6 +232,7 @@ h1.heading span {
     font-size: 40px;
     color: #fff;
     -webkit-text-stroke: #46670f 2px;
+    
 }
 
 h1.heading {
@@ -233,7 +245,7 @@ h1.heading i {
     position: absolute;
     color: #46670f;
     left: 3rem;
-    bottom: -42%;
+    top: 146px;
     transform: translateY(-50%);
 }
 
@@ -282,4 +294,61 @@ section.goodtea .text {
 
 section.goodtea .text h1 {
     font-size: 30px;
+}
+
+section.featured {
+    background-color: #46670f;
+    position: relative;
+    min-height: 50vh;
+}
+
+section.featured .buttons {
+    position: absolute;
+    height: 80px;
+    border: 10px solid #fff;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100vmax;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: #fff;
+}
+
+section.featured .buttons button {
+    flex: 1 0 30%;
+    height: 100%;
+    background-color: #46670f;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius:100vmax;
+
+    font-family: 'Rokkitt', serif;
+}
+section.featured .buttons button.active {
+  background-color: #eeaf00;
+  color: #fff;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    row-gap: 20px;
+}
+
+.tea-card{
+    width: 19%;
+    aspect-ratio: 1/1;
+
 }
