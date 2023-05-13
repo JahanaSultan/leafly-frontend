@@ -1,11 +1,18 @@
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 import nav from '../assets/img/logo1.png'
 
 const Navbar = () => {
+   
+  const [change, setChange] = useState(false)
+  
+  window.addEventListener('scroll', () => {
+    window.scrollY > 45 ? setChange(true) : setChange(false)
+  })
 
   return (
-    //Create custom navbar here
-    <nav>
+    
+    <nav className={change? "color" : null}>
       <div className="nav-wrapper padding-x">
         <ul className='right'>
           <li><NavLink to="#">Çaylar</NavLink></li>

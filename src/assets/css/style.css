@@ -12,6 +12,41 @@ body {
     background: #fff;
 }
 
+.color{
+    background-color: #fff;
+}
+
+p {
+    line-height: 1.5;
+}
+
+button.btn {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    outline: none;
+    background: #eeaf00;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 100vmax;
+    width: 200px;
+}
+
+button.btn:hover {
+    background: transparent;
+    border: 2px solid #eeaf00;
+    color: #eeaf00;
+}
+
+h1.section-header {
+    font-size: 50px;
+    color: #46670f;
+    margin-bottom: 20px;
+}
+
 .padding-x {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -56,6 +91,8 @@ nav {
     top: 0;
     background-color: #ffffff57;
     z-index: 2;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 nav .nav-wrapper {
@@ -141,11 +178,7 @@ header .overlay {
     flex-direction: column;
 }
 
-header .overlay h1 {
-    font-size: 50px;
-    color: #46670f;
-    margin-bottom: 20px;
-}
+
 
 header .overlay p {
     font-size: 20px;
@@ -154,25 +187,7 @@ header .overlay p {
     line-height: 1.5;
 }
 
-header .overlay button {
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    transition: 0.5s;
-    outline: none;
-    background: #eeaf00;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'EB Garamond', serif;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 100vmax;
-}
 
-header .overlay button:hover {
-    background: transparent;
-    border: 2px solid #eeaf00;
-    color: #eeaf00;
-}
 
 .splide {
     width: 100%;
@@ -210,7 +225,7 @@ h1.heading span {
 
 h1.heading {
     border-bottom: 2px dashed #46670f;
-    padding: 20px 0;
+    padding: 50px 0;
     position: relative;
 }
 
@@ -223,9 +238,48 @@ h1.heading i {
 }
 
 .category-box {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+section.goodtea {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    background-color: #f1f1f1;
+}
+
+section.goodtea .img {
+    flex: 1 0 50%;
+    height: 100%;
+    position: relative;
+
+}
+
+section.goodtea .img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+section.goodtea .text {
+    flex: 1 0 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.goodtea .text h1 {
+    font-size: 30px;
 }

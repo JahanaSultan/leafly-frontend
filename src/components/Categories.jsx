@@ -5,6 +5,7 @@ import white from '../assets/img/tea/white.jpg'
 import masala from '../assets/img/tea/masala_chai.jpeg'
 import oolong from '../assets/img/tea/oolong.jpeg'
 import jasmine from '../assets/img/tea/jasmine.jpeg'
+import flower from '../assets/img/tea/sinuxa.png'
 
 const Categories = () => {
 
@@ -28,6 +29,10 @@ const Categories = () => {
         {
             name: "Jasmin Çay",
             img: jasmine,
+        },
+        {
+            name: "Çiçək Çay",
+            img: flower,
         },
 
     ]

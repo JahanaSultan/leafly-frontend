@@ -27,8 +27,8 @@ function Header() {
         <SplideSlide>
           <header className='teaheader'>
             <div className="overlay padding-x">
-              <h1>Organic</h1>
-              <h1>Bitki Çayları!</h1>
+              <h1 className='section-header'>Organic</h1>
+              <h1 className='section-header'>Bitki Çayları!</h1>
               {/* <p>Çaylarımızın ən yaxşı tərkiblərini sizə təqdim edirik. </p>
               <p> Faydalı çay içərək özünüzü mükafatlandırmağın tam vaxtıdır.  </p> */}
               <button className="btn btn-primary">Çayları Kəşf Et</button>
@@ -38,8 +38,8 @@ function Header() {
         <SplideSlide>
           <header className='honeyheader'>
             <div className="overlay padding-x">
-              <h1>Organic</h1>
-              <h1>Bal Məhsulları!</h1>
+              <h1 className='section-header'>Organic</h1>
+              <h1 className='section-header'>Bal Məhsulları!</h1>
               {/* <p>Bal məhsullarımızın ən yaxşı tərkiblərini sizə təqdim edirik. </p>
               <p> Faydalı bal məhsulları ilə özünüzü mükafatlandırmağın tam vaxtıdır.  </p> */}
               <button className="btn btn-primary">Balları Kəşf Et</button>
