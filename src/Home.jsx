@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import Loader from "./Loader"
+import Categories from "./components/Categories"
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
             <Loader/>
             <Navbar />
             <Header />
+            <Categories />
         </>
     )
 }
