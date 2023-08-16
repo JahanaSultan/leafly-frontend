@@ -8,11 +8,13 @@
     color: #10401b;
 
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 body {
     background: #fff;
 }
@@ -100,7 +102,7 @@ nav {
     height: 60px;
     position: fixed;
     top: 0;
-    background-color: #ffffff57;
+    background-color: #ffffff;
     z-index: 2;
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -154,25 +156,48 @@ nav .nav-wrapper li a.coffee::after {
     color: #fff;
 }
 
-header {
-    background: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+.splide__slide {
+    display: flex;
+    background-color: #f8f2ed;
+}
+
+.splide__slide .heading {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-header.honeyheader {
-    background: url(../img/honey.jpg);
+.splide__slide .walpapper {
+    flex: 2;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom;
+    background-size: cover !important;
+    background-position: right bottom !important;
+    height: 100vh;
 }
 
-header.honeyheader .overlay h1 {
+.splide__slide .walpapper.tea {
+    background: url(../img/bg.jpg);
+}
+
+.splide__slide .walpapper.coffee {
+    background: url(../img/coffee1.jpg);
+}
+
+.splide__slide .walpapper.honey {
+    background: url(../img/honey1.jpg);
+}
+
+.splide__slide .walpapper.teaware {
+    background: url(../img/teaware.jpg);
+}
+
+
+header.honeyheader .overlay h1,
+header.coffeeheader .overlay h1,
+header.teawareheader .overlay h1 {
     color: #f1f1f1;
 }
 
@@ -189,16 +214,12 @@ header .overlay {
     flex-direction: column;
 }
 
-
-
 header .overlay p {
     font-size: 20px;
     font-family: 'EB Garamond', serif;
     color: #10401b;
     line-height: 1.5;
 }
-
-
 
 .splide {
     width: 100%;
@@ -232,7 +253,7 @@ h1.heading span {
     font-size: 40px;
     color: #fff;
     -webkit-text-stroke: #46670f 2px;
-    
+
 }
 
 h1.heading {
@@ -267,21 +288,46 @@ section.goodtea {
     width: 100%;
     height: 60vh;
     background-color: #f1f1f1;
+    position: relative;
 }
 
 section.goodtea .img {
     flex: 1 0 50%;
-    height: 100%;
-    position: relative;
-
+    height: 120%;
+    position: absolute;
+    z-index: 100;
+    top: -15%;
+    right: 3rem;
+    filter: drop-shadow(5px 5px 5px #dddd);
+    -webkit-animation: rotate 60s normal linear infinite;
+    animation: rotate 60s normal linear infinite;
 }
 
-section.goodtea .img img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
 
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
 }
 
 section.goodtea .text {
@@ -290,6 +336,7 @@ section.goodtea .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 50%;
 }
 
 section.goodtea .text h1 {
@@ -327,18 +374,19 @@ section.featured .buttons button {
     color: #fff;
     font-size: 18px;
     cursor: pointer;
-    border-radius:100vmax;
+    border-radius: 100vmax;
 
     font-family: 'Rokkitt', serif;
 }
+
 section.featured .buttons button.active {
-  background-color: #eeaf00;
-  color: #fff;
+    background-color: #eeaf00;
+    color: #fff;
 }
 
-.cards{
+.cards {
     display: flex;
-    justify-content: space-between;
+    gap:calc(4% / 3);
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
@@ -347,8 +395,11 @@ section.featured .buttons button.active {
     row-gap: 20px;
 }
 
-.tea-card{
-    width: 19%;
-    aspect-ratio: 1/1;
-
+.card {
+    width: 24%;
+    height: 300px;
+    background-color: #f8f2ed;
+}
+.card img{
+    height: 220px;
 }

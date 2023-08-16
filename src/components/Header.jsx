@@ -13,10 +13,6 @@ import '@splidejs/react-splide/css/core';
 
 function Header() {
   return (
-    <>
-      {/* <header className="padding-x">
-        
-      </header> */}
       <Splide aria-label="My Favorite Images" options={{
         rewind: true,
         type:"fade",
@@ -25,30 +21,39 @@ function Header() {
         speed: 500,
       }}>
         <SplideSlide>
-          <header className='teaheader'>
-            <div className="overlay padding-x">
-              <h1 className='section-header'>Organic</h1>
+            <div className="heading  padding-x">
+              <h1 className='section-header'>Müalicəvi</h1>
               <h1 className='section-header'>Bitki Çayları!</h1>
-              {/* <p>Çaylarımızın ən yaxşı tərkiblərini sizə təqdim edirik. </p>
-              <p> Faydalı çay içərək özünüzü mükafatlandırmağın tam vaxtıdır.  </p> */}
               <button className="btn btn-primary">Çayları Kəşf Et</button>
             </div>
-          </header>
+            <div className="walpapper tea"></div>
         </SplideSlide>
         <SplideSlide>
-          <header className='honeyheader'>
-            <div className="overlay padding-x">
+            <div className="heading padding-x">
+              <h1 className='section-header'>Aromalı</h1>
+              <h1 className='section-header'>Qəhvələr!</h1>
+              <button className="btn btn-primary">Qəhvələri Kəşf Et</button>
+            </div>
+            <div className="walpapper coffee"></div>
+        </SplideSlide>
+        <SplideSlide>
+            <div className="heading padding-x">
               <h1 className='section-header'>Organic</h1>
-              <h1 className='section-header'>Bal Məhsulları!</h1>
-              {/* <p>Bal məhsullarımızın ən yaxşı tərkiblərini sizə təqdim edirik. </p>
-              <p> Faydalı bal məhsulları ilə özünüzü mükafatlandırmağın tam vaxtıdır.  </p> */}
+              <h1 className='section-header'>Ballar!</h1>
               <button className="btn btn-primary">Balları Kəşf Et</button>
             </div>
-          </header>
+            <div className="walpapper honey"></div>
         </SplideSlide>
+        <SplideSlide>
+            <div className="heading padding-x">
+              <h1 className='section-header'>Çay</h1>
+              <h1 className='section-header'>Ləvazimatları!</h1>
+              <button className="btn btn-primary">Qabları Kəşf Et</button>
+            </div>
+            <div className="walpapper teaware"></div>
+        </SplideSlide>
+ 
       </Splide>
-
-    </>
   )
 }
 
