@@ -40,7 +40,7 @@ const Categories = () => {
     return (
         <div className=''>
             <h1 className="text-center heading">
-                <span>Kategoriyalar</span>
+                <span>Çay Kategoriyaları</span>
                 <i class="ri-scissors-line"></i>
             </h1>
             <div className="category-box padding-x">

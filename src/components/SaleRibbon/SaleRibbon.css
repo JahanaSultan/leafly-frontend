@@ -1,0 +1,62 @@
+.wdp-ribbon {
+ display: inline-block;
+ padding: 2px 15px;
+ position: absolute;
+ right: 0px;
+ top: 20px;
+ line-height: 24px;
+ height: 24px;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: baseline;
+ border-radius: .25em;
+ border-radius: 0;
+ text-shadow: none;
+ font-weight: normal;
+ background-color: #eeaf00 !important;
+}
+
+.wdp-ribbon-six {
+ background: none !important;
+ position: relative;
+ box-sizing: border-box;
+ position: absolute;
+ width: 65px;
+ height: 65px;
+ top: 0px;
+ right: 0px;
+ padding: 0px;
+ overflow: hidden;
+}
+
+.wdp-ribbon-inner-wrap {
+ -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+ -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+ transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.wdp-ribbon-border {
+ width: 0;
+ height: 0;
+ border-right: 65px solid #eeaf00;
+ border-bottom: 65px solid transparent;
+ z-index: 12;
+ position: relative;
+ top: -20px;
+}
+
+.wdp-ribbon-text {
+ font-size: 10px;
+ font-weight: bold;
+ line-height: 13px;
+ position: absolute;
+ z-index: 14;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+ top: 15px;
+ left: -5px;
+ width: 91px;
+ text-align: center;
+ color: #fff;
+}
