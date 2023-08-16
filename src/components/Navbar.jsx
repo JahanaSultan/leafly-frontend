@@ -22,9 +22,9 @@ const Navbar = () => {
         <NavLink to="#" className="brand-logo"><img src={nav} alt="logo" /> Leafly</NavLink>
         <ul className="right ">
          
-          <li><NavLink to="#">Ana Səhifə</NavLink></li>
-          <li><NavLink to="#">Blog</NavLink></li>
-          <li><NavLink to="#" className="login-button">Giriş Et</NavLink></li>
+          <li><NavLink to="#">Çay Aksesuarları</NavLink></li>
+          <li><NavLink to="#">Çayla İçilənlər</NavLink></li>
+          <li><NavLink to="#" className="login-button"></NavLink></li>
         </ul>
 
       </div>

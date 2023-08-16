@@ -1,0 +1,19 @@
+h1.heading span {
+    font-size: 40px;
+    color: #fff;
+    -webkit-text-stroke: #46670f 2px;
+}
+
+h1.heading {
+    border-bottom: 2px dashed #46670f;
+    padding: 50px 0;
+    position: relative;
+}
+
+h1.heading i {
+    position: absolute;
+    color: #46670f;
+    left: 3rem;
+    top: 146px;
+    transform: translateY(-50%);
+}

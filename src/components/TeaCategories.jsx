@@ -6,8 +6,9 @@ import masala from '../assets/img/tea/masala_chai.jpeg'
 import oolong from '../assets/img/tea/oolong.jpeg'
 import jasmine from '../assets/img/tea/jasmine.jpeg'
 import flower from '../assets/img/tea/sinuxa.png'
+import SectionHeading from './SectionHeading/SectionHeading'
 
-const Categories = () => {
+const TeaCategories = () => {
 
     const categories = [
         {
@@ -38,11 +39,8 @@ const Categories = () => {
     ]
 
     return (
-        <div className=''>
-            <h1 className="text-center heading">
-                <span>Çay Kategoriyaları</span>
-                <i class="ri-scissors-line"></i>
-            </h1>
+        <div>
+           <SectionHeading text="Çay Kategoriaları"/>
             <div className="category-box padding-x">
                 {categories.map((category) => (
                     <Category name={category.name} img={category.img} />
@@ -52,4 +50,4 @@ const Categories = () => {
     )
 }
 
-export default Categories
+export default TeaCategories

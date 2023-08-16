@@ -56,6 +56,16 @@ p {
     line-height: 1.5;
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
 button.btn {
     padding: 10px 20px;
     border: 2px solid transparent;
@@ -135,6 +145,7 @@ nav {
     z-index: 2;
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    z-index: 100;
 }
 
 nav .nav-wrapper {
@@ -278,27 +289,6 @@ header .overlay p {
     margin-top: 10px;
 }
 
-h1.heading span {
-    font-size: 40px;
-    color: #fff;
-    -webkit-text-stroke: #46670f 2px;
-
-}
-
-h1.heading {
-    border-bottom: 2px dashed #46670f;
-    padding: 50px 0;
-    position: relative;
-}
-
-h1.heading i {
-    position: absolute;
-    color: #46670f;
-    left: 3rem;
-    top: 146px;
-    transform: translateY(-50%);
-}
-
 .category-box {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -385,12 +375,10 @@ section.featured .buttons {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 100vmax;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 50%;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     background-color: #fff;
 }
 
@@ -403,7 +391,6 @@ section.featured .buttons button {
     color: #fff;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 100vmax;
 
     font-family: 'Rokkitt', serif;
 }
