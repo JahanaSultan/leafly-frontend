@@ -1,0 +1,22 @@
+.sale {
+ height: 50vh;
+ background-image: url("../../assets/img/gift.jpg");
+ background-position: right center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.sale .content h1 {
+ font-size: 100px;
+ color: #eeaf00;
+ font-weight: 900;
+}
+.sale .content h1 span {
+ font-size: 30px;
+ color: #eeaf00
+}
+
+.sale .content h2{
+ color: #46670f;
+ font-size: 40px;
+}

@@ -1,8 +1,5 @@
 import tea from "../../assets/img/tea/black.jpeg";
 import { Link } from "react-router-dom";
-import basket from "../../assets/icons/shopping-basket-line.svg";
-import heart from "../../assets/icons/heart-line.svg";
-import eye from "../../assets/icons/eye-line.svg";
 import SaleRibbon from "../SaleRibbon/SaleRibbon";
 import "./Card.css";
 import ReactStars from "react-rating-stars-component";

@@ -4,6 +4,7 @@ import TeaCategories from "./components/TeaCategories";
 import GoodTea from "./components/GoodTea";
 import Featured from "./components/Featured";
 import Categories from "./components/Categories1/Categories";
+import Sale from "./components/Sale/Sale";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <TeaCategories />
       <GoodTea />
       <Featured />
+      <Sale/>
     </>
   );
 }
