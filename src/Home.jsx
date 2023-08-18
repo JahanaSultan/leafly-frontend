@@ -6,6 +6,7 @@ import Featured from "./components/Featured";
 import Categories from "./components/Categories1/Categories";
 import Sale from "./components/Sale/Sale";
 import GiftBox from "./components/GiftBox/GiftBox";
+import Instagram from "./components/Instagram/Instagram";
 
 function Home() {
   return (
@@ -16,8 +17,9 @@ function Home() {
       <TeaCategories />
       <GoodTea />
       <Featured />
-      <GiftBox/> 
-       <Sale/>
+      <GiftBox />
+      <Sale />
+      <Instagram />
     </>
   );
 }

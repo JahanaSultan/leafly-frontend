@@ -9,24 +9,34 @@
 }
 
 .card.explore {
-    background-image: url("https://hips.hearstapps.com/hmg-prod/images/close-up-of-stack-gifts-on-table-against-blue-royalty-free-image-1676327737.jpg");
-    background-size: cover;
-    background-position: left center;
     position: relative;
+    --b: 10px;
+    --g: 5px;
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%, #eeaf00 0;
+    background:
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+        conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
 }
-.card.explore .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.card.explore:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+}
+
+.card.explore .icon {
     width: 100%;
-    height: 100%;
-    background-color: #ffffff6f;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
+    height: 50px;
+    margin-top: 10px;
 }
-.card.explore .overlay:hover{
-    background-color: #ffffffc1;
-    backdrop-filter: blur(10px);
+
+.card.explore .icon img {
+    width: 40px;
+    height: 40px;
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 9px;
 }
 
 .card .card-image {
@@ -77,4 +87,16 @@
 .card .card-bottom .left small.category {
     font-size: 10px;
     color: #46670f;
+}
+
+@keyframes slide1 {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10px, 0);
+    }
 }

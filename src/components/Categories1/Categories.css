@@ -31,7 +31,6 @@ section.categories {
 
 .categories:hover .category-card:not(:hover){
  flex: 0;
-
 }
 .categories:hover .category-card:hover{
  flex: 4;
