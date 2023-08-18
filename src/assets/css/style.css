@@ -386,7 +386,7 @@ section.featured .buttons {
 }
 
 section.featured .buttons button {
-    flex: 1 0 30%;
+    flex: 1 0 25%;
     height: 100%;
     background-color: #46670f;
     border: 0;

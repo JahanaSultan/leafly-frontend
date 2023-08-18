@@ -4,10 +4,11 @@ const Featured = () => {
   return (
     <section className="featured padding-x">
       <div className="buttons">
-        <button className="active">Yeni Gələnlər</button>
-        <button className="">Ən Çox Satılanlar</button>
-        <button className="">Premium</button>
-      </div>{" "}
+        <button className="active">Çaylar</button>
+        <button>Qəhvələr</button>
+        <button>Ballar</button>
+        <button>Teaware</button>
+      </div>
       <div className="cards">
         <Card />
         <Card />
