@@ -1,8 +1,8 @@
 import "./Categories.css";
 import CategoryCard from "./CategoryCard";
-import teacup from "../../assets/img/teacup.jpg";
-import honey from "../../assets/img/honey1.jpg";
-import coffee from "../../assets/img/coffee2.jpg";
+import teacup from "../../assets/img/tea1.jpg";
+import honey from "../../assets/img/choney.jpg";
+import coffee from "../../assets/img/coffee1.jpg";
 import teaware from "../../assets/img/teaware.jpg";
 
 

@@ -8,6 +8,18 @@ section.categories {
  height: 100%;
  position: relative;
  transition: 0.3s ease-in-out; overflow: hidden;
+ border-radius: 20px;
+ margin-left: 5px;
+}
+.category-card:first-child {
+ flex: 3;
+ margin-left: 0;
+ border-top-left-radius: 0;
+ border-bottom-left-radius: 0;
+}
+.category-card:last-child {
+ border-top-right-radius: 0;
+ border-bottom-right-radius: 0;
 }
 
 .category-card .card-image {
@@ -30,10 +42,10 @@ section.categories {
 }
 
 .categories:hover .category-card:not(:hover){
- flex: 0;
+ flex: 1;
 }
 .categories:hover .category-card:hover{
- flex: 4;
+ flex: 3;
 }
 
 /* .category-card .overlay .card-text::after{
