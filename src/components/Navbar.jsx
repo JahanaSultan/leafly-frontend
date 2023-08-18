@@ -24,6 +24,7 @@ const Navbar = () => {
          
           <li><NavLink to="#">Çay Aksesuarları</NavLink></li>
           <li><NavLink to="#">Çayla İçilənlər</NavLink></li>
+          <li><NavLink to="#">Giriş Et</NavLink></li>
           <li><NavLink to="#" className="login-button"></NavLink></li>
         </ul>
 

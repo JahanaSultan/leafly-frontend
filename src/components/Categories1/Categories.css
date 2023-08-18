@@ -1,17 +1,13 @@
 section.categories {
- height: 100vh;
+ height: calc(100vh - 60px);
  margin-top: 60px;
-}
-
-.category-card:hover {
- flex: 2;
 }
 
 .category-card {
  flex: 1;
  height: 100%;
  position: relative;
- transition: 0.3s ease-in-out;
+ transition: 0.3s ease-in-out; overflow: hidden;
 }
 
 .category-card .card-image {
@@ -32,6 +28,15 @@ section.categories {
  transition: 0.3s ease-in-out;
  position: relative;
 }
+
+.categories:hover .category-card:not(:hover){
+ flex: 0;
+
+}
+.categories:hover .category-card:hover{
+ flex: 4;
+}
+
 /* .category-card .overlay .card-text::after{
  content:"";
  position: absolute;
