@@ -1,9 +1,12 @@
+import SectionHeading from "../SectionHeading/SectionHeading"
 import "./Blog.css"
 import BlogCard from "./BlogCard"
 
 const BlogSection = () => {
   return (
-    <div>BlogSection</div>
+   <>
+   <SectionHeading text="Faydalı Bloglar"/>
+   </>
   )
 }
 

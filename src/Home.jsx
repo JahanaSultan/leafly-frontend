@@ -7,6 +7,7 @@ import Categories from "./components/Categories1/Categories";
 import Sale from "./components/Sale/Sale";
 import GiftBox from "./components/GiftBox/GiftBox";
 import Instagram from "./components/Instagram/Instagram";
+import BlogSection from "./components/Blog/BlogSection";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <GoodTea />
       <Featured />
       <GiftBox />
+      <BlogSection />
       <Sale />
       <Instagram />
     </>
