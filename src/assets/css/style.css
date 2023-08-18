@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Merriweather', serif;
     color: #10401b;
 }
 
@@ -13,7 +13,9 @@ img {
     height: 100%;
     object-fit: cover;
 }
-
+button{
+    cursor: pointer;
+}
 .d-flex {
     display: flex
 }
@@ -370,7 +372,7 @@ section.featured {
 
 section.featured .buttons {
     position: absolute;
-    height: 80px;
+    height: 60px;
     border: 10px solid #fff;
     top: 0;
     left: 50%;
@@ -380,6 +382,7 @@ section.featured .buttons {
     width: 50%;
     overflow: hidden;
     background-color: #fff;
+    border-radius: 100vmax;
 }
 
 section.featured .buttons button {
@@ -389,10 +392,7 @@ section.featured .buttons button {
     border: 0;
     outline: 0;
     color: #fff;
-    font-size: 18px;
     cursor: pointer;
-
-    font-family: 'Rokkitt', serif;
 }
 
 section.featured .buttons button.active {
@@ -402,7 +402,7 @@ section.featured .buttons button.active {
 
 .cards {
     display: flex;
-    gap: calc(4% / 3);
+    gap: calc(5% / 4);
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
