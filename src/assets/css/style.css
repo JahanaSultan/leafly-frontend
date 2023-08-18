@@ -13,9 +13,11 @@ img {
     height: 100%;
     object-fit: cover;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 .d-flex {
     display: flex
 }
@@ -185,15 +187,15 @@ nav .nav-wrapper li a {
     position: relative;
 }
 
-nav .nav-wrapper li a.coffee::after {
+nav .nav-wrapper li a.badge::after {
     content: 'Tezliklə';
     position: absolute;
-    /* transform: translateX(-50%); */
+    transform: translateX(20%);
     right: -80%;
     top: -50%;
     background: rgb(208, 19, 19);
-    padding: 5px 10px;
-    font-size: 10px;
+    padding: 2px 5px;
+    font-size: 8px;
     border-radius: 100vmax;
     color: #fff;
 }

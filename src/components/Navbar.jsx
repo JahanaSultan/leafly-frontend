@@ -17,12 +17,12 @@ const Navbar = () => {
         <ul className='right'>
           <li><NavLink to="#">Çaylar</NavLink></li>
           <li><NavLink to="#">Bal Məhsulları</NavLink></li>
-          <li><NavLink to="#" className="coffee">Qəhvələr</NavLink></li>
+          <li><NavLink to="#" >Qəhvələr</NavLink></li>
         </ul>
         <NavLink to="#" className="brand-logo"><img src={nav} alt="logo" /> Leafly</NavLink>
         <ul className="right ">
          
-          <li><NavLink to="#">Çay Aksesuarları</NavLink></li>
+          <li><NavLink to="#" className="badge">Çay Aksesuarları</NavLink></li>
           <li><NavLink to="#">Blog</NavLink></li>
           <li><NavLink to="#">Giriş Et</NavLink></li>
           <li><NavLink to="#" className="login-button"></NavLink></li>

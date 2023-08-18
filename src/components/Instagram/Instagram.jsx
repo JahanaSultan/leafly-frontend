@@ -60,6 +60,36 @@ const Instagram = () => {
                 alt=""
               />
             </Slide>
+            <Slide index={6}>
+              <img
+                src="https://www.bestgiftcertificates.com.au/content/images/thumbs/0016200_gourmet-hampers.png"
+                alt=""
+              />
+            </Slide>
+            <Slide index={7}>
+              <img
+                src="https://www.bestgiftcertificates.com.au/content/images/thumbs/0016200_gourmet-hampers.png"
+                alt=""
+              />
+            </Slide>
+            <Slide index={8}>
+              <img
+                src="https://www.bestgiftcertificates.com.au/content/images/thumbs/0016200_gourmet-hampers.png"
+                alt=""
+              />
+            </Slide>
+            <Slide index={9}>
+              <img
+                src="https://www.bestgiftcertificates.com.au/content/images/thumbs/0016200_gourmet-hampers.png"
+                alt=""
+              />
+            </Slide>
+            <Slide index={10}>
+              <img
+                src="https://www.bestgiftcertificates.com.au/content/images/thumbs/0016200_gourmet-hampers.png"
+                alt=""
+              />
+            </Slide>
           </Slider>
         </CarouselProvider>
       </div>
