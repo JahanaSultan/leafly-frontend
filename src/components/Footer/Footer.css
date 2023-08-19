@@ -1,0 +1,36 @@
+footer {
+ background-color: var(--primary-color);
+ padding-top: 50px;
+}
+
+footer * {
+ color: #fff
+}
+
+footer h3 {
+ color: var(--tertiary-color);
+ margin-bottom: 15px;
+}
+
+footer .logo img {
+ width: 30px;
+ height: 30px;
+ padding-bottom: 5px;
+}
+
+footer .copyright {
+ margin-top: 50px
+}
+
+footer li a {
+ font-size: 14px;
+}
+footer li a {
+display: flex;
+align-items: center;
+}
+footer li a svg{
+fill: var(--tertiary-color);
+width: 20px;
+height: 20px;
+}

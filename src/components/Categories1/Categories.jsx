@@ -12,7 +12,7 @@ const Categories = () => {
         <CategoryCard text="Çaylar" img={teacup} />
         <CategoryCard text="Qəhvələr" img={coffee} />
         <CategoryCard text="Ballar" img={honey} />
-        <CategoryCard text="Ləvazimatlar" img={teaware} />
+        {/* <CategoryCard text="Ləvazimatlar" img={teaware} /> */}
       </section>
 
   );

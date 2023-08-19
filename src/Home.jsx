@@ -8,6 +8,7 @@ import Sale from "./components/Sale/Sale";
 import GiftBox from "./components/GiftBox/GiftBox";
 import Instagram from "./components/Instagram/Instagram";
 import BlogSection from "./components/Blog/BlogSection";
+import Footer from "./components/Footer/Footer";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       <BlogSection />
       <Sale />
       <Instagram />
+      <Footer />
     </>
   );
 }

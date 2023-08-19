@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #10401b;
+    --secondary-color: #46670f;
+    --tertiary-color: #eeaf00;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +13,7 @@
     font-family: 'Merriweather', serif;
     color: #10401b;
 }
+
 
 img {
     width: 100%;
