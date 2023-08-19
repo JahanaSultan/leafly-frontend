@@ -190,8 +190,7 @@ nav .nav-wrapper li a {
 nav .nav-wrapper li a.badge::after {
     content: 'Tezliklə';
     position: absolute;
-    transform: translateX(20%);
-    right: -80%;
+    right: -30px;
     top: -50%;
     background: rgb(208, 19, 19);
     padding: 2px 5px;

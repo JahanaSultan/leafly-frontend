@@ -21,7 +21,6 @@ const Navbar = () => {
         </ul>
         <NavLink to="#" className="brand-logo"><img src={nav} alt="logo" /> Leafly</NavLink>
         <ul className="right ">
-         
           <li><NavLink to="#" className="badge">Çay Aksesuarları</NavLink></li>
           <li><NavLink to="#">Blog</NavLink></li>
           <li><NavLink to="#">Giriş Et</NavLink></li>
