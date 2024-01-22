@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BlogCard = () => {
   return (
     <Link to="#" className="blog-card">
-      <div className="car-image">
+      <div className="card-image">
         <img
           src="https://www.myjapanesegreentea.com/wp-content/uploads/2023/05/brewing-coffee-in-a-kyusu-360x238.webp"
           alt=""
@@ -17,7 +17,7 @@ const BlogCard = () => {
           veritatis facere.
         </p>
         <div className="d-flex align-items-center read-continue">
-          <small>Oxumağa davam et </small>
+          <small>Oxumağa davam et</small>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

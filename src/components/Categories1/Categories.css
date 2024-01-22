@@ -48,7 +48,7 @@ section.categories {
  flex: 3;
 }
 
-/* .category-card .overlay .card-text::after{
+.category-card .overlay .card-text::after{
  content:"";
  position: absolute;
  top: 0;
@@ -58,14 +58,15 @@ section.categories {
  box-sizing: border-box;
  border: 2px dashed transparent;
  border-radius: 5px;
-} */
-/* .category-card:hover .overlay .card-text {
- width: 100%;
- height: 100%;
- background-color: #ffffff94;
+}
+.category-card:hover .overlay .card-text {
+ width: 80%;
+ height: 80%;
+ background-color: #ffffff5f;
+ backdrop-filter: 2px;
  font-size: 40px;
-} */
-/* .category-card:hover .overlay .card-text::after {
+}
+.category-card:hover .overlay .card-text::after {
 top: 15px;
 left: 15px;
 bottom: 15px;
@@ -73,4 +74,4 @@ right: 15px;
 width: auto;
 height: auto;
 border: 2px dashed #10401b;
-} */
+}

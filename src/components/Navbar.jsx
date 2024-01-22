@@ -19,7 +19,7 @@ const Navbar = () => {
           <li><NavLink to="#">Bal Məhsulları</NavLink></li>
           <li><NavLink to="#" >Qəhvələr</NavLink></li>
         </ul>
-        <NavLink to="#" className="brand-logo"><img src={nav} alt="logo" /> Leafly</NavLink>
+        <NavLink to="#" className="brand-logo"><img src={nav} alt="logo" /> Chaichi</NavLink>
         <ul className="right ">
           <li><NavLink to="#" className="badge">Çay Aksesuarları</NavLink></li>
           <li><NavLink to="#">Blog</NavLink></li>

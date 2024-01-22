@@ -1,6 +1,6 @@
 .blog-card {
  width: 24%;
- height: 350px;
+ height: 360px;
  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
  border-radius: 5px;
  overflow: hidden;
@@ -8,12 +8,13 @@
 
 .blog-card .card-content {
  padding: 10px;
- height: 150px;
+ height: 160px;
 }
 
 .blog-card .card-content p {
  font-size: 14px;
  height: 90px;
+ text-overflow: ellipsis;
 }
 
 .blog-card .card-image {
@@ -23,19 +24,23 @@
 .blog-card .card-content h3 {
  height: 30px;
  color: #eeaf00;
+ text-overflow: ellipsis;
 }
 
-.blog-card .card-content div.read-continue{
- height: 30px;
+.blog-card .card-content div.read-continue {
+ height: 40px;
  width: 100%;
  color: #eeaf00;
 }
-.blog-card .card-content div.read-continue svg{
-transition: 0.3s ease-in-out;
+
+.blog-card .card-content div.read-continue svg {
+ transition: 0.3s ease-in-out;
 }
-.blog-card:hover .card-content div.read-continue svg{
+
+.blog-card:hover .card-content div.read-continue svg {
  transform: translateX(5px);
 }
-.blog-card .card-content div.read-continue small{
+
+.blog-card .card-content div.read-continue small {
  color: #46670f;
 }
