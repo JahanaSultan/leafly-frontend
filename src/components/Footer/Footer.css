@@ -13,9 +13,11 @@ footer h3 {
 }
 
 footer .logo img {
- width: 30px;
- height: 30px;
+ width: 50px;
+ height: 50px;
  padding-bottom: 5px;
+ margin-right: 7px;
+ margin-bottom: 7px;
 }
 
 footer .copyright {
@@ -24,6 +26,7 @@ footer .copyright {
 
 footer li a {
  font-size: 14px;
+ margin-bottom: 5px;
 }
 footer li a {
 display: flex;

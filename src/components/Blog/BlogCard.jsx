@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 const BlogCard = () => {
   return (
     <Link to="#" className="blog-card">
-      <div className="card-image">
-        <img
-          src="https://www.myjapanesegreentea.com/wp-content/uploads/2023/05/brewing-coffee-in-a-kyusu-360x238.webp"
-          alt=""
-        />
+      <div className="card-image" style={{background:"url('https://images.unsplash.com/photo-1510858519355-33a2c90cc73a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
+        <div className="overlay"></div>
       </div>
       <div className="card-content d-flex flex-column justify-content-between">
         <h3 className="d-flex align-items-center">Yaxşı çayı necə dəmləyək?</h3>
