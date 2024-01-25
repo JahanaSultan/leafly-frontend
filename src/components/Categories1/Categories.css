@@ -75,3 +75,28 @@ width: auto;
 height: auto;
 border: 2px dashed #10401b;
 }
+
+
+header{
+ height: calc(100vh - 60px);
+ margin-top: 60px;
+ 
+}
+
+header .path{
+ height: 100%;
+ width: 100%;
+ clip-path: circle(50.1% at 22% 54%);
+ background-color: #53672e;
+ position: relative;
+}
+
+header .path img{
+height: 600px;
+object-fit: contain;
+position: absolute;
+top: 50%;
+right: 20%;
+transform: translateY(-50%);
+
+}
