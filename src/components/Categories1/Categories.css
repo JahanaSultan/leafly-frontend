@@ -7,16 +7,19 @@ section.categories {
  flex: 1;
  height: 100%;
  position: relative;
- transition: 0.3s ease-in-out; overflow: hidden;
+ transition: 0.3s ease-in-out;
+ overflow: hidden;
  border-radius: 20px;
  margin-left: 5px;
 }
+
 .category-card:first-child {
  flex: 3;
  margin-left: 0;
  border-top-left-radius: 0;
  border-bottom-left-radius: 0;
 }
+
 .category-card:last-child {
  border-top-right-radius: 0;
  border-bottom-right-radius: 0;
@@ -31,7 +34,7 @@ section.categories {
  z-index: 1;
 }
 
-.category-card .overlay .card-text{
+.category-card .overlay .card-text {
  width: 250px;
  height: 60px;
  background-color: #ffffff94;
@@ -41,24 +44,26 @@ section.categories {
  position: relative;
 }
 
-.categories:hover .category-card:not(:hover){
+.categories:hover .category-card:not(:hover) {
  flex: 1;
 }
-.categories:hover .category-card:hover{
+
+.categories:hover .category-card:hover {
  flex: 3;
 }
 
-.category-card .overlay .card-text::after{
- content:"";
+.category-card .overlay .card-text::after {
+ content: "";
  position: absolute;
  top: 0;
  left: 0;
  width: 250px;
- height: 60px; 
+ height: 60px;
  box-sizing: border-box;
  border: 2px dashed transparent;
  border-radius: 5px;
 }
+
 .category-card:hover .overlay .card-text {
  width: 80%;
  height: 80%;
@@ -66,37 +71,37 @@ section.categories {
  backdrop-filter: 2px;
  font-size: 40px;
 }
+
 .category-card:hover .overlay .card-text::after {
-top: 15px;
-left: 15px;
-bottom: 15px;
-right: 15px;
-width: auto;
-height: auto;
-border: 2px dashed #10401b;
+ top: 15px;
+ left: 15px;
+ bottom: 15px;
+ right: 15px;
+ width: auto;
+ height: auto;
+ border: 2px dashed #10401b;
 }
 
 
-header{
- height: calc(100vh - 60px);
- margin-top: 60px;
- 
+header {
+ height: 100vh;
 }
 
-header .path{
+header .splide{
+ width: 100%!important;
+}
+
+header .path {
  height: 100%;
  width: 100%;
- clip-path: circle(50.1% at 22% 54%);
- background-color: #53672e;
+ clip-path: circle(50% at 13% 48%);
+ background-color: var(--color-green);
  position: relative;
 }
 
-header .path img{
-height: 600px;
-object-fit: contain;
-position: absolute;
-top: 50%;
-right: 20%;
-transform: translateY(-50%);
-
+header img {
+ height: 600px;
+ object-fit: contain;
+ position: absolute;
+ top: calc(55% - 300px);
 }

@@ -1,6 +1,7 @@
 import "./Categories.css";
 import { Link } from "react-router-dom";
 
+
 const CategoryCard = ({text, img}) => {
   return (
     <Link to="#" className="category-card ">
