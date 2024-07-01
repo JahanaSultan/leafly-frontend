@@ -87,21 +87,77 @@ header {
  height: 100vh;
 }
 
-header .splide{
- width: 100%!important;
-}
-
-header .path {
- height: 100%;
- width: 100%;
- clip-path: circle(50% at 13% 48%);
- background-color: var(--color-green);
+header .splide .splide__slide {
+ width: 100% !important;
+ height: 100vh;
  position: relative;
+ background-color: #fbfaf5;
+ display: flex;
+ justify-content: center;
 }
 
-header img {
- height: 600px;
+
+
+header .splide img.tea {
+ height: 500px;
  object-fit: contain;
  position: absolute;
- top: calc(55% - 300px);
+ top: 30%;
+ left: 0;
+}
+header .splide img.coffee {
+ height: 350px;
+ object-fit: contain;
+ position: absolute;
+ top: 40%;
+ left: 0;
+}
+
+header .splide img.greentea-1 {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ height: 300px;
+ width: fit-content;
+ object-fit: contain;
+}
+
+header .splide img.greentea-2 {
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ height: 300px;
+ width: fit-content;
+ object-fit: contain;
+}
+
+
+header .splide__slide .clip-path {
+ height: 100%;
+ width: 100%;
+ clip-path: circle(70% at 50% -30%);
+ position: relative;
+}
+header .splide__slide.tea .clip-path {
+ background-color: #e0e5d6;
+}
+
+header .splide__slide.coffee .clip-path {
+ background-color: #d4bba7;
+}
+
+header .splide .splide__slide h1{
+ position: absolute;
+ z-index: 10000;
+ top: 25%;
+ text-align: center;
+ font-family: 'Playfair Display', serif;
+ font-size: 35px;
+}
+header .splide .splide__slide.tea h1{
+ color: var(--color-green);
+}
+
+header .splide .splide__slide.coffee h1{
+ color: #36210f;
 }
